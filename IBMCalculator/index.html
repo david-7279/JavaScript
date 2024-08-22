@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="icon" type="image/x-icon" href="./assets/images/weight.png">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Achieve Your Health Goals</h1>
+    <h2>Calculate Your BMI Instantly</h2>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="weight">
+        <p>Your weight</p>
+        <div class="input-container">
+          <input type="text" placeholder="Weight" id="weight">
+          <span class="unit">kg</span>
+        </div>
+      </div>
+      <div class="height">
+        <p>Your height</p>
+        <div class="input-container">
+          <input type="text" placeholder="Height" id="height">
+          <span class="unit">cm</span>
+        </div>
+      </div>
+      <button onclick="calculate_BMI()">Calculate</button>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="./assets/images/CoffeCupLifting.png" alt="Coffe Cup Lifting">
+      </div>
+      <div class="categories">
+        <div class="category-item">
+          <div class="ellipse underweight"></div>
+          <div class="information">
+            <p class="range">Less than 18,5</p>
+            <p class="classification">Underweight</p>
+          </div>
+        </div>
+        <div class="category-item">
+          <div class="ellipse normal-weight"></div>
+          <div class="information">
+            <p class="range">Between 18,5 and 24,9</p>
+            <p class="classification">Normal weight</p>
+          </div>
+        </div>
+        <div class="category-item">
+          <div class="ellipse overweight"></div>
+          <div class="information">
+            <p class="range">Between 25 and 29,9</p>
+            <p class="classification">Overweight</p>
+          </div>
+        </div>
+        <div class="category-item">
+          <div class="ellipse obesity-i"></div>
+          <div class="information">
+            <p class="range">Between 30 and 34,9</p>
+            <p class="classification">Obesity Grade I</p>
+          </div>
+        </div>
+        <div class="category-item">
+          <div class="ellipse obesity-ii"></div>
+          <div class="information">
+            <p class="range">Between 35 and 39,9</p>
+            <p class="classification">Obesity Grade II</p>
+          </div>
+        </div>
+        <div class="category-item">
+          <div class="ellipse obesity-iii"></div>
+          <div class="information">
+            <p class="range">Greater than 40</p>
+            <p class="classification">Obesity Grade III</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="range">
+    </div>
+    <div class="lower">
+      <div class="line-container">
+        <div class="line">
+          <div class="line-filled"></div> <!-- Color line -->
+          <div class="line-indicator"></div>
+        </div>
+      </div>
+      <h3>
+        Take control of your health by knowing your BMI. Our calculator is designed to provide you with accurate and
+        instant results, helping you to stay informed and make better lifestyle choices. Your journey to a healthier you
+        begins here.
+      </h3>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
